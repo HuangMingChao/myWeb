@@ -1,0 +1,23 @@
+{
+  "name": "dmstsa1.0.0",
+  "version": "1.0.0",
+  "description": "项目解构梳理",
+  "main": "index.html",
+  "scripts": {
+    "test": "ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "tsa"
+  ],
+  "author": "hmc",
+  "license": "ISC",
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0"
+  }
+}
