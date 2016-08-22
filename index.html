@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" ng-app="Login">
 
@@ -77,4 +78,85 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en" ng-app="Login">
+
+<head>
+    <meta charset="UTF-8">
+    <title>预演DEMO</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/plugins/jquery.min.js">
+    </script>
+
+    <script src="/plugins/angular.js">
+    </script>
+    <script src="/plugins/angular-cookies.min.js">
+    </script>
+    <script src="/plugins/angular-ui-router.min.js">
+    </script>
+    <script src="/plugins/bootstrap.min.js">
+    </script>
+    <script src="/js/loginController.js">
+    </script>
+</head>
+
+<body class="loginBody" ng-controller="loginController">
+    <div class="loginContainer">
+        <div class="container-fluid">
+            <form ng-submit="loginSubmit(vm)" name="loginForm">
+                <div class="paddingBottom10 textCenter captionColor">
+                    <h1 class="caption">Ahdms</h1>
+                </div>
+                <div class="paddingBottom10">
+                    <label class="floatLeft loginLabelFont"><i class="fa fa-user fa-lg"></i> </label>
+                    <div class="floatLeft borderBottom">
+                        <input type="text" class="loginInput" placeholder="用户名" name="username" ng-model="vm.username" ng-required="true">
+                    </div>
+                    <div class="clear">
+
+                    </div>
+                </div>
+                <div class="paddingBottom10">
+                    <label class="floatLeft loginLabelFont"><i class="fa fa-paw fa-lg"></i></label>
+                    <div class="floatLeft borderBottom">
+                        <input type="password" class="loginInput " placeholder="密码" name="password" ng-model="vm.userpassword" ng-required="true">
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <!--======================================错误信息 START==============================-->
+                <div class="paddingBottom10">
+                    <span class="floatLeft loginLabelFont"></span>
+                    <span class="floatLeft loginLabelFont" id="errorInfo">
+                       <span ng-if="check()">
+                           <span class ="errorInfo redWhiteColor"><i class ="fa fa-info fa-lg"></i></span>
+                    <span class="errorText"> 输入不能为空</span>
+                    </span>
+                    <span ng-if="loginForm.$error.loginFail">
+                           <span class ="errorInfo redWhiteColor"><i class ="fa fa-info fa-lg"></i></span>
+                    <span class="errorText"> 用户名或密码错误</span>
+                    </span>
+                    </span>
+                    <div class="clear">
+
+                    </div>
+                </div>
+                <!--==========================================错误信息END===============================-->
+
+                <div class="paddingBottom10">
+                    <div class="textCenter">
+                        <button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-primary boderRadius redWhiteColor"><i class="fa fa-sign-in fa-3x"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+>>>>>>> origin/master
 </html>
